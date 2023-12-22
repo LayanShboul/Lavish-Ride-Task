@@ -1,0 +1,299 @@
+* {
+  margin-right: 12px;
+}
+
+.img1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  src: "mountain.jpg";
+  width: 100%;
+  height: 50%;
+}
+
+.s {
+  width: 50;
+  height: 40px;
+  margin-left: 20px;
+}
+h3 {
+  color: white;
+}
+
+.search {
+  background: none;
+  border: none;
+  margin-left: 100px;
+}
+
+.vl {
+  z-index: 1;
+  border-left: 1px solid white;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+hr {
+  position: relative;
+  top: -50px;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.btn1 {
+  background: none;
+  border: none;
+  color: azure;
+  margin-right: 5px;
+}
+
+.dropdown {
+  background: none;
+  border: none;
+  color: azure;
+}
+
+button {
+  margin-left: 30px;
+}
+
+.notification-button {
+  position: relative;
+  background-color: white;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #e74c3c;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: none;
+}
+
+.notification-button:hover {
+  background-color: #b0c1cc;
+}
+
+.notification-button.active .notification-badge {
+  display: block;
+}
+
+.pr1 {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #818181;
+  cursor: pointer;
+}
+
+.content {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  margin-right: 12px;
+}
+
+h1 {
+  color: #333;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+p {
+  color: #555;
+}
+
+.open-btn {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  position: fixed;
+  top: 2px;
+  right: 70px;
+  z-index: 2;
+  color: #818181;
+  margin-right: 12px;
+}
+
+.account {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  margin-top: 150px;
+  bottom: 100%;
+  min-height: fit-content;
+}
+.img2 {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  bottom: 0;
+  top: -100px;
+  margin-left: 100px;
+}
+.follow {
+  background-color: black;
+  margin-top: 150px;
+}
+
+.btn2 {
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  border: none;
+  max-width: max-content;
+  margin-left: 130px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.btn2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #f17b2d, #f7db41, #21ee43);
+  transition: width 0.3s;
+}
+
+.btn2:hover::before {
+  width: 100%;
+}
+
+[data-tab-info] {
+  display: none;
+}
+
+.active[data-tab-info] {
+  display: block;
+}
+
+.tab-content {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 260px;
+  height: min-content;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.scrollable-tab-content {
+  background-color: black;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.tab-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+  background-color: rgb(158, 154, 154);
+}
+
+.tab-content::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+}
+
+.img3 {
+  border-radius: 60%;
+  border: 1px white;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(192, 169, 169);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
